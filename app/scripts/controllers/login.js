@@ -7,9 +7,7 @@
  * # LoginCtrl
  * Controller of the appApp
  */
-angular.module('appApp').controller('LoginCtrl', function($scope, $location, authService, $activityIndicator, appConfig) {
-
-    $scope.appName = appConfig.APP_NAME;
+angular.module('appApp').controller('LoginCtrl', function($scope, $location, authService, $activityIndicator) {
 
     $activityIndicator.stopAnimating();
     alertify.closeAll();

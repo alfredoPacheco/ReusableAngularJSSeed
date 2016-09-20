@@ -55,7 +55,7 @@ angular.module('appApp', [
     alertify.set('notifier', 'delay', 2);
 
     $httpProvider.interceptors.push('authInterceptorService');
-}).run(function(authService, $rootScope, $location) {
+}).run(function(authService, $rootScope, $location, appConfig) {
 
     authService.fillAuthData();
 
@@ -93,5 +93,7 @@ angular.module('appApp', [
     $rootScope.logOut = function() {
         authService.logOut();
     };
+
+    $rootScope.appName = appConfig.APP_NAME;
 
 });
