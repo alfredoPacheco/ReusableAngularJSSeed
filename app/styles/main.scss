@@ -14,7 +14,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 }
 
 body {
-  padding: 0;
+  padding: 50px 0;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -72,7 +72,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 900px;
   }
 
   /* Remove the padding we set earlier */
